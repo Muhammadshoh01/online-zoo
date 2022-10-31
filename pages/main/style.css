@@ -80,7 +80,7 @@ header {
 
 /*  */
 .section__1 {
-	background-image: url(/assets/images/GiantPanda.png);
+	background-image: url(../../assets/images/GiantPanda.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	height: 100vh;
