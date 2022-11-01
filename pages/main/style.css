@@ -81,8 +81,9 @@ header {
 /*  */
 .section__1 {
 	background-image: url(../../assets/images/GiantPanda.png);
-	background-size: contain;
+	background-size: cover;
 	background-repeat: no-repeat;
+	width: 100%;
 	padding-bottom: 700px;
 }
 .section__2 {
@@ -324,7 +325,7 @@ header {
 			#eaf7fe 127.9%,
 			#eaf7fe 149.54%
 		);
-	padding: 69px 220px;
+	padding: 69px 220px 100px 220px;
 }
 .pick {
 	background: rgba(253, 253, 255, 0.52);
@@ -396,24 +397,33 @@ header {
 .pick__img1 {
 	background: #ffffff;
 	border-radius: 5px;
-	padding: 54px 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	width: 168px;
 	height: 168px;
+	border: 1px solid #fe9013;
 }
 
 .pick__img2 {
-	padding: 38px 41px 35px 41px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	background: #ffffff;
 	border-radius: 5px;
 	width: 168px;
 	height: 168px;
+	border: 1px solid #fe9013;
 }
 .pick__img3 {
-	padding: 38px 21px 35px 21px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	background: #ffffff;
 	border-radius: 5px;
 	width: 168px;
 	height: 168px;
+	border: 1px solid #fe9013;
 }
 .pick__box {
 	width: 168px;
@@ -441,11 +451,12 @@ header {
 	background: #fe9013;
 	border-radius: 25px;
 	width: 298px;
-	height: 54px;
+	/* height: 54px; */
+	padding: 15px 0;
 	border-radius: 25px;
 	border: none;
-	margin-top: 63px;
-	margin-bottom: 59px;
+	margin-top: 60px;
+	margin-bottom: 60px;
 }
 
 /*  */
