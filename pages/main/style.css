@@ -83,7 +83,7 @@ header {
 	background-image: url(../../assets/images/GiantPanda.png);
 	background-size: contain;
 	background-repeat: no-repeat;
-	height: 100vh;
+	padding-bottom: 700px;
 }
 .section__2 {
 	position: relative;
@@ -153,7 +153,7 @@ header {
 	/* align-items: center; */
 	gap: 87px;
 	justify-content: space-between;
-	margin: -150px 0 180px 0;
+	margin: 140px 0 180px 0;
 }
 .backstage__text h2 {
 	font-style: normal;
@@ -405,6 +405,9 @@ header {
 	width: 168px;
 	height: 168px;
 }
+.pick__box {
+	width: 168px;
+}
 .pick__box p {
 	font-size: 16px;
 	line-height: 140%;
@@ -501,7 +504,7 @@ header {
 }
 .leav {
 	position: absolute;
-	bottom: 0;
+	bottom: -105px;
 	right: 0;
 }
 .testimonials {
