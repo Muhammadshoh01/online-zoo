@@ -75,7 +75,7 @@ header {
 	color: #fff;
 }
 .design a:hover {
-	color: #fed290;
+	color: #f9804b;
 }
 
 /*  */
@@ -279,13 +279,13 @@ header {
 
 	width: 1324px;
 	margin: 0 auto;
-	margin-bottom: 80px;
+	margin-bottom: 76px;
 }
 
 .flower_foto1 {
 	position: absolute;
 	right: 0;
-	top: -125px;
+	top: -128px;
 }
 .flower_foto2 {
 	position: absolute;
@@ -332,7 +332,7 @@ header {
 	/* Note: backdrop-filter has minimal browser support */
 	border-top-left-radius: 20px;
 	border-top-right-radius: 20px;
-	padding: 41px 0 0 99px;
+	padding: 41px 0 0 0;
 }
 .pick__work {
 	background: rgba(253, 253, 255, 0.52);
@@ -347,24 +347,29 @@ header {
 	line-height: 120%;
 	text-align: center;
 	color: #fe9013;
+	font-style: normal;
+	font-weight: 400;
 }
 .pick__text h3 {
 	font-size: 24px;
 	line-height: 120%;
 	color: #333b41;
 	padding: 30px 0 40px 0;
+	font-weight: 400;
+	padding-left: 99px;
 }
 .pick__text h4 {
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 130%;
 	color: #333b41;
+	padding-left: 99px;
 }
 .pick__text p {
 	font-size: 16px;
 	line-height: 130%;
 	color: #333b41;
-	padding: 10px 198px 60px 0;
+	padding: 10px 198px 60px 99px;
 }
 .pick__work h3 {
 	font-size: 36px;
@@ -374,6 +379,11 @@ header {
 	color: #333b41;
 	text-align: center;
 	font-style: normal;
+}
+.pick__text a {
+	color: inherit;
+	border-bottom: 1px solid #fe9013;
+	padding-bottom: 4px;
 }
 .pick__process {
 	display: flex;
@@ -407,6 +417,7 @@ header {
 }
 .pick__box {
 	width: 168px;
+	/* height: 168px; */
 }
 .pick__box p {
 	font-size: 16px;
