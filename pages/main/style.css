@@ -146,7 +146,10 @@ header {
 	left: calc(50% - 298px / 2 + 332px);
 	top: 546px;
 }
-
+.watch__btn:hover {
+	background: #e47209;
+	cursor: pointer;
+}
 /*  */
 
 .backstage {
@@ -236,9 +239,34 @@ header {
 .animals__card {
 	border-radius: 5px;
 	border: 2px solid #f9804b;
+	overflow: hidden;
+	position: relative;
+}
+.animals__card img {
+	transition: all 0.5s linear;
 }
 .animals__card-button {
 	text-align: center;
+}
+.animals__card:hover img {
+	transform: scale(1.4);
+}
+.animals__card:hover .animals__card-info img {
+	display: none;
+}
+.animals__card:hover .animals__card-info {
+	background: #000000;
+	opacity: 0.6;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	color: #ffffff;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: flex-start;
 }
 .animals__card-button button {
 	font-style: normal;
@@ -255,7 +283,10 @@ header {
 	border-radius: 25px;
 	border: none;
 }
-
+.animals__card-button button:hover {
+	background-color: #e47209;
+	cursor: pointer;
+}
 .arrow__left-ellipse,
 .arrow__right-ellipse {
 	width: 62px;
@@ -271,6 +302,11 @@ header {
 	color: #ffffff;
 
 	width: 16px;
+}
+.arrow__left-ellipse:hover,
+.arrow__right-ellipse:hover {
+	background: #4b9200;
+	cursor: pointer;
 }
 .animals__scroll {
 	display: flex;
@@ -458,7 +494,10 @@ header {
 	margin-top: 60px;
 	margin-bottom: 60px;
 }
-
+.pick__button button:hover {
+	background-color: #e47209;
+	cursor: pointer;
+}
 /*  */
 /*  */
 /*  */
@@ -471,7 +510,8 @@ header {
 	text-align: center;
 	font-size: 36px;
 	line-height: 130%;
-
+	font-weight: 400;
+	font-style: normal;
 	color: #333b41;
 }
 .user__box {
@@ -523,6 +563,10 @@ header {
 	border: none;
 	color: #ffffff;
 	margin-bottom: 180px;
+}
+.testimonials__button button:hover {
+	background: #e47209;
+	cursor: pointer;
 }
 .leav {
 	position: absolute;

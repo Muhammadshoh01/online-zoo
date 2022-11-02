@@ -10,11 +10,11 @@
 // }
 // console.log(multiplication(3, 5))
 
-// let myFunction = function () {
-// 	console.log('hi there')
-// }
-// myFunction = 'let it be strign'
-// myFunction()
+let myFunction = function () {
+	console.log('hi there')
+}
+myFunction()
+myFunction = 'let it be strign'
 
 // console.log(isNaN(NaN))
 // console.log(isNaN(true))
@@ -62,3 +62,10 @@
 // console.log(getMiddle('A'))
 
 // console.log(7 / 2)
+
+console.log(myPerfectFunction)
+const myPerfectFunction = function () {
+	console.log('hi there')
+}
+myPerfectFunction()
+console.log(4)
