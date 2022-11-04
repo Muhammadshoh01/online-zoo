@@ -10,6 +10,7 @@
 	max-width: 1160px;
 	margin: 0 auto;
 }
+/* header section */
 .section__1 {
 	background-image: url(../../assets/images/GiantPanda.png);
 	background-size: cover;
@@ -86,3 +87,149 @@ header {
 .design a:hover {
 	color: #f9804b;
 }
+/* end header section */
+
+/* start donate section */
+.donate {
+	background: linear-gradient(
+			315.75deg,
+			rgba(254, 210, 144, 0.7) 30.06%,
+			#febdab 100.95%,
+			rgba(254, 210, 144, 0.7) 106.36%
+		),
+		linear-gradient(
+			315.75deg,
+			rgba(254, 189, 171, 0.74) 30.06%,
+			rgba(243, 169, 248, 0.66) 50.74%,
+			#e0d8f0 80.49%,
+			#eaf7fe 127.9%,
+			#eaf7fe 149.54%
+		),
+		linear-gradient(
+			315.75deg,
+			rgba(254, 189, 171, 0.74) 30.06%,
+			rgba(243, 169, 248, 0.66) 50.74%,
+			#e0d8f0 80.49%,
+			#eaf7fe 127.9%,
+			#eaf7fe 149.54%
+		);
+}
+.donate__help {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 130%;
+	color: #ffffff;
+	padding-top: 40px;
+}
+.donate__data {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 140%;
+	color: #ffffff;
+	padding: 20px 0 60px 0;
+}
+.donate__information {
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 130%;
+	color: #fe9013;
+	padding-bottom: 70px;
+}
+/* end donate section */
+.pick {
+	background: rgba(255, 255, 255, 0.52);
+	backdrop-filter: blur(2px);
+	border-radius: 20px;
+	padding: 25px 0 40px 0;
+}
+.pick h2 {
+	text-align: center;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 48px;
+	line-height: 120%;
+	text-align: center;
+	color: #fe9013;
+}
+.pick h3 {
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 120%;
+	color: #333b41;
+	padding-left: 92px;
+	padding-top: 20px;
+}
+/* diet  */
+.diet {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 64px;
+	margin-top: 75px;
+}
+/* .diet__info {
+	display: flex;
+	align-items: center;
+} */
+.diet__amount {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 60px;
+}
+.diet__amount h2 {
+	font-weight: 500;
+	font-size: 72px;
+	line-height: 80%;
+	text-align: center;
+	text-transform: uppercase;
+	color: #000000;
+	padding-left: 80px;
+}
+.diet__info p {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 140%;
+	text-align: center;
+	color: #333b41;
+	padding-top: 15px;
+}
+/* diet  */
+
+/* progress bar */
+.amount p {
+	padding-left: 92px;
+	padding-top: 87px;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 140%;
+	/* or 22px */
+
+	color: #000000;
+}
+.progress__bar {
+	padding: 15px 144px 30px 92px;
+}
+.progress__btns {
+	display: flex;
+	gap: 120px;
+}
+.progress__btn {
+	width: 10px;
+	height: 10px;
+	background: #ffee2e;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.progress__line {
+	background: #72828e;
+	width: 98%;
+	height: 2px;
+	margin: 0 auto;
+	margin-top: -5px;
+}
+/* progress bar */
