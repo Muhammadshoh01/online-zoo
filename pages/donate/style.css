@@ -34,7 +34,8 @@ header {
 	align-items: center;
 	gap: 62px;
 }
-.header__logo {
+.header__logo,
+.footer__logo {
 	position: relative;
 }
 
@@ -76,7 +77,8 @@ header {
 	color: #f9804b;
 	text-decoration: underline;
 }
-.bamboo {
+.header__logo .bamboo,
+.footer__logo .bamboo {
 	position: absolute;
 	top: 25px;
 	left: 11px;
@@ -113,6 +115,7 @@ header {
 			#eaf7fe 127.9%,
 			#eaf7fe 149.54%
 		);
+	padding-bottom: 180px;
 }
 .donate__help {
 	font-style: normal;
@@ -128,21 +131,21 @@ header {
 	font-size: 16px;
 	line-height: 140%;
 	color: #ffffff;
-	padding: 20px 0 60px 0;
+	padding: 10px 0 46px 0;
 }
 .donate__information {
 	font-weight: 400;
 	font-size: 36px;
 	line-height: 130%;
 	color: #fe9013;
-	padding-bottom: 70px;
+	padding-bottom: 59px;
 }
 /* end donate section */
 .pick {
 	background: rgba(255, 255, 255, 0.52);
 	backdrop-filter: blur(2px);
 	border-radius: 20px;
-	padding: 25px 0 40px 0;
+	padding: 40px 0 40px 0;
 }
 .pick h2 {
 	text-align: center;
@@ -166,19 +169,19 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: 64px;
-	margin-top: 75px;
+	gap: 52px;
+	margin-top: 90px;
 }
 /* .diet__info {
 	display: flex;
 	align-items: center;
 } */
-.diet__amount {
+/* .diet__amount {
 	display: flex;
-	align-items: center;
+	align-items: flex-end;
 	justify-content: center;
-	gap: 60px;
-}
+	gap: 70px;
+} */
 .diet__amount h2 {
 	font-weight: 500;
 	font-size: 72px;
@@ -186,7 +189,6 @@ header {
 	text-align: center;
 	text-transform: uppercase;
 	color: #000000;
-	padding-left: 80px;
 }
 .diet__info p {
 	font-style: normal;
@@ -195,14 +197,14 @@ header {
 	line-height: 140%;
 	text-align: center;
 	color: #333b41;
-	padding-top: 15px;
+	/* padding-top: 15px; */
 }
 /* diet  */
 
 /* progress bar */
 .amount p {
-	padding-left: 92px;
-	padding-top: 87px;
+	padding-left: 95px;
+	padding-top: 30px;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
@@ -233,3 +235,258 @@ header {
 	margin-top: -5px;
 }
 /* progress bar */
+
+/* another amount */
+.another__amount {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	margin: 50px 0 25px 0;
+}
+.another__amount input {
+	width: 268px;
+	height: 54px;
+	border: 1px solid #929699;
+	border-radius: 2px;
+	padding: 16px 17px 16px 9px;
+}
+.another__amount input:focus-visible {
+	border-color: #4b9200;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+.dollar {
+	position: absolute;
+	left: 9px;
+	bottom: 16px;
+}
+.amount__type {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	gap: 50px;
+}
+.amount__type input {
+	border: 2px solid #fe9013;
+	width: 16px;
+	height: 16px;
+	appearance: none;
+	border-radius: 50%;
+	transition: 0.2s all linear;
+	cursor: pointer;
+	outline: rgba(75, 146, 0, 1);
+}
+
+.amount__type input:checked {
+	background-color: rgba(75, 146, 0, 1);
+	border: 2px solid rgba(75, 146, 0, 1);
+}
+.amount__type label {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 140%;
+	/* or 22px */
+
+	color: #333b41;
+}
+.amount__type div {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+}
+.amount__button {
+	text-align: center;
+	margin: 30px 0;
+}
+.amount__button button {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 140%;
+	text-align: center;
+	text-transform: uppercase;
+	color: #ffffff;
+	background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+	border-radius: 25px;
+	width: 298px;
+	height: 54px;
+	border: none;
+}
+.amount__button button:hover {
+	background: #f9804b;
+	cursor: pointer;
+}
+.amount__share {
+	text-align: center;
+}
+.amount__share p {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 140%;
+	color: #333b41;
+}
+
+.footer__logo h1 {
+	color: #fff;
+	border: 1px solid #fff;
+	line-height: 120%;
+	font-size: 19px;
+	padding: 0 4.55px 2px 2.55px;
+	display: flex;
+	flex-direction: column;
+
+	font-weight: 400;
+
+	border-radius: 2px;
+}
+.footer__logo h1 span {
+	display: block;
+	text-align: center;
+}
+footer {
+	background: #111115;
+	padding: 40px 0 50px 0;
+}
+.footer__header {
+	display: flex;
+	justify-content: space-between;
+}
+.footer__nav {
+	margin-left: 202px;
+}
+.footer__nav ul li a {
+	font-weight: 400;
+	font-style: normal;
+}
+.footer__news h2 {
+	font-size: 24px;
+	line-height: 120%;
+	padding-bottom: 11px;
+	font-weight: 400;
+	/* identical to box height, or 29px */
+
+	color: #ffffff;
+}
+.footer__news input {
+	font-size: 16px;
+	line-height: 140%;
+	padding: 10px;
+	color: #bdbdbd;
+	outline: none;
+	background: transparent;
+	border: 0.7px solid #fe9013;
+	border-radius: 2px;
+	width: 228px;
+}
+.footer__news input:focus {
+	border-color: #4b9200;
+}
+.footer__news button {
+	font-size: 16px;
+	line-height: 140%;
+	color: #4b9200;
+	padding: 12px 40px;
+	background: #f1f3f2;
+	border: 1px solid #4b9200;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.footer__news button:hover {
+	background-color: #4b9200;
+	color: #fff;
+}
+.footer__btn {
+	margin-top: 31px;
+}
+.footer__btn a {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 140%;
+	/* or 22px */
+	width: 298px;
+	height: 54px;
+	text-align: center;
+	text-transform: uppercase;
+	background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+	border-radius: 5px;
+	border: none;
+	color: #ffffff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.footer__btn a:hover {
+	background: #e47209;
+	cursor: pointer;
+}
+.footer__navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	margin-top: 45px;
+}
+.icon a {
+	width: 26px;
+	height: 26px;
+	background: rgba(196, 196, 196, 0.5);
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	gap: 17px;
+}
+.icon p {
+	font-size: 16px;
+	line-height: 140%;
+	/* or 22px */
+
+	color: #ffffff;
+}
+.icon {
+	display: flex;
+	gap: 25px;
+	align-items: center;
+}
+.icon1 a {
+	padding: 5px 9px;
+}
+.icon a:hover {
+	background: #4b9200;
+}
+.icon a:hover p {
+	color: #4b9200;
+}
+.icon2 a {
+	padding: 6px 5px;
+}
+.icon3 a {
+	padding: 5px;
+}
+.icon4 a {
+	padding: 6px 4px 7px 4px;
+}
+.footer__icons {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.contributors {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.contributors p {
+	font-weight: 100;
+	font-size: 16px;
+	line-height: 130%;
+	/* identical to box height, or 21px */
+	font-weight: lighter;
+	color: #ffffff;
+	opacity: 0.5;
+}
