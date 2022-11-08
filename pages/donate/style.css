@@ -131,7 +131,7 @@ header {
 	font-size: 16px;
 	line-height: 140%;
 	color: #ffffff;
-	padding: 10px 0 46px 0;
+	padding: 9px 0 47px 0;
 }
 .donate__information {
 	font-weight: 400;
@@ -145,7 +145,7 @@ header {
 	background: rgba(255, 255, 255, 0.52);
 	backdrop-filter: blur(2px);
 	border-radius: 20px;
-	padding: 40px 0 40px 0;
+	padding: 40px 67px 62px 92px;
 }
 .pick h2 {
 	text-align: center;
@@ -155,13 +155,13 @@ header {
 	line-height: 120%;
 	text-align: center;
 	color: #fe9013;
+	margin-right: 39px;
 }
 .pick h3 {
 	font-weight: 400;
 	font-size: 24px;
 	line-height: 120%;
 	color: #333b41;
-	padding-left: 92px;
 	padding-top: 20px;
 }
 /* diet  */
@@ -169,13 +169,13 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: 52px;
-	margin-top: 90px;
+	gap: 74px;
+	margin-top: 62px;
 }
-/* .diet__info {
-	display: flex;
-	align-items: center;
-} */
+.diet__info {
+	/* display: flex; */
+	position: relative;
+}
 /* .diet__amount {
 	display: flex;
 	align-items: flex-end;
@@ -197,14 +197,19 @@ header {
 	line-height: 140%;
 	text-align: center;
 	color: #333b41;
-	/* padding-top: 15px; */
+	padding-top: 20px;
+}
+.x_icon {
+	position: absolute;
+	right: 3px;
+	top: 30px;
 }
 /* diet  */
 
 /* progress bar */
 .amount p {
-	padding-left: 95px;
-	padding-top: 30px;
+	padding-left: 4px;
+	padding-top: 43px;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
@@ -214,18 +219,61 @@ header {
 	color: #000000;
 }
 .progress__bar {
-	padding: 15px 144px 30px 92px;
+	padding: 15px 0 30px 0;
 }
 .progress__btns {
 	display: flex;
 	gap: 120px;
+	position: relative;
 }
-.progress__btn {
+.progress__btns {
+	background: #404950;
+	border-radius: 2px;
+	padding: 4px 30px 5px 26px;
+	margin-right: 25px;
+}
+.progress__btn input {
+	appearance: none;
 	width: 10px;
 	height: 10px;
 	background: #ffee2e;
 	border-radius: 50%;
 	cursor: pointer;
+	z-index: 1;
+}
+.progress__btn {
+	z-index: 1;
+}
+.progress__btn input:checked {
+	background-color: #4b9200;
+}
+.progress__btns::after {
+	content: '';
+	width: 93%;
+	margin: 0 auto;
+	height: 2px;
+	background: #72828e;
+	position: absolute;
+	top: 13px;
+}
+.progress__labels {
+	display: flex;
+	align-items: center;
+	gap: 58px;
+	margin-top: 12px;
+	margin-right: 24px;
+}
+.progress__labels label {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 26px;
+	line-height: 140%;
+	text-transform: uppercase;
+	color: #333b41;
+	cursor: pointer;
+	width: 73px;
+	height: 5px;
+	letter-spacing: -1px;
 }
 .progress__line {
 	background: #72828e;
@@ -250,6 +298,7 @@ header {
 	border: 1px solid #929699;
 	border-radius: 2px;
 	padding: 16px 17px 16px 9px;
+	margin-right: 25px;
 }
 .another__amount input:focus-visible {
 	border-color: #4b9200;
@@ -261,14 +310,15 @@ input::-webkit-inner-spin-button {
 }
 .dollar {
 	position: absolute;
-	left: 9px;
-	bottom: 16px;
+	left: 602px;
+	bottom: 12px;
 }
 .amount__type {
 	text-align: center;
 	display: flex;
 	justify-content: center;
 	gap: 50px;
+	margin-right: 38px;
 }
 .amount__type input {
 	border: 2px solid #fe9013;
@@ -301,7 +351,7 @@ input::-webkit-inner-spin-button {
 }
 .amount__button {
 	text-align: center;
-	margin: 30px 0;
+	margin: 31px 0;
 }
 .amount__button button {
 	font-style: normal;
@@ -316,6 +366,7 @@ input::-webkit-inner-spin-button {
 	width: 298px;
 	height: 54px;
 	border: none;
+	margin-right: 20px;
 }
 .amount__button button:hover {
 	background: #f9804b;
