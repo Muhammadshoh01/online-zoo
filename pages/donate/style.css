@@ -243,9 +243,16 @@ header {
 }
 .progress__btn {
 	z-index: 1;
+	position: relative;
 }
 .progress__btn input:checked {
 	background-color: #4b9200;
+}
+
+.progress__btn img {
+	position: absolute;
+	top: -11px;
+	right: -15px;
 }
 .progress__btns::after {
 	content: '';
