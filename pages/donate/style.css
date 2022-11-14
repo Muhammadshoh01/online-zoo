@@ -169,12 +169,13 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: 74px;
 	margin-top: 62px;
+	margin-left: -29px;
 }
 .diet__info {
 	/* display: flex; */
 	position: relative;
+	padding-top: 48px;
 }
 /* .diet__amount {
 	display: flex;
@@ -189,6 +190,7 @@ header {
 	text-align: center;
 	text-transform: uppercase;
 	color: #000000;
+	margin-right: 100px;
 }
 .diet__info p {
 	font-style: normal;
@@ -197,12 +199,13 @@ header {
 	line-height: 140%;
 	text-align: center;
 	color: #333b41;
-	padding-top: 20px;
+	padding-top: 12px;
+	padding-right: 101px;
 }
 .x_icon {
 	position: absolute;
-	right: 3px;
-	top: 30px;
+	right: 76px;
+	top: 73px;
 }
 /* diet  */
 
@@ -241,15 +244,30 @@ header {
 	cursor: pointer;
 	z-index: 1;
 }
+
 .progress__btn {
 	z-index: 1;
 	position: relative;
 }
-.progress__btn input:checked {
+.progress__btn input::after {
+	content: url(../../assets/icons/roller-icon.svg);
+	position: absolute;
+	top: -10px;
+	right: -15px;
+	visibility: hidden;
+	transition: 0.3s ease;
+}
+.progress__btn input:checked::after {
+	visibility: visible;
+}
+/* .progress__btn input:checked {
 	background-color: #4b9200;
+} */
+.progress__btn input:checked .progress__labels label {
+	color: #fe9013;
 }
 
-.progress__btn img {
+/* .progress__btn img {
 	position: absolute;
 	top: -11px;
 	right: -15px;
@@ -262,15 +280,17 @@ header {
 	background: #72828e;
 	position: absolute;
 	top: 13px;
-}
+} */
 .progress__labels {
 	display: flex;
 	align-items: center;
 	gap: 58px;
-	margin-top: 12px;
-	margin-right: 24px;
+	margin-top: 32px;
+	margin-right: 22px;
 }
 .progress__labels label {
+	display: flex;
+	align-items: center;
 	font-style: normal;
 	font-weight: 500;
 	font-size: 26px;
@@ -280,11 +300,15 @@ header {
 	cursor: pointer;
 	width: 73px;
 	height: 5px;
-	letter-spacing: -1px;
+	letter-spacing: -2px;
+	transition: 0.4s linear;
+}
+.progress__labels label:hover {
+	color: #e47209;
 }
 .progress__line {
 	background: #72828e;
-	width: 98%;
+	width: 95%;
 	height: 2px;
 	margin: 0 auto;
 	margin-top: -5px;
@@ -297,7 +321,7 @@ header {
 	align-items: center;
 	justify-content: center;
 	position: relative;
-	margin: 50px 0 25px 0;
+	margin: 32px 0 25px 0;
 }
 .another__amount input {
 	width: 268px;
@@ -310,6 +334,7 @@ header {
 .another__amount input:focus-visible {
 	border-color: #4b9200;
 }
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
 	-webkit-appearance: none;
@@ -390,7 +415,7 @@ input::-webkit-inner-spin-button {
 	color: #333b41;
 }
 
-.footer__logo h1 {
+.footer__logo h2 {
 	color: #fff;
 	border: 1px solid #fff;
 	line-height: 120%;
@@ -403,7 +428,7 @@ input::-webkit-inner-spin-button {
 
 	border-radius: 2px;
 }
-.footer__logo h1 span {
+.footer__logo h2 span {
 	display: block;
 	text-align: center;
 }
