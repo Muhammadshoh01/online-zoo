@@ -361,6 +361,18 @@ header {
 	right: 0;
 	bottom: 0;
 }
+.flower_foto4 {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	display: none;
+}
+.flower_foto5 {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	display: none;
+}
 /*  */
 /*  */
 /*  */
@@ -388,7 +400,9 @@ header {
 			#eaf7fe 127.9%,
 			#eaf7fe 149.54%
 		);
-	padding: 69px 220px 100px 220px;
+	padding: 69px 0 100px 0;
+
+	margin: 0 auto;
 }
 .pick {
 	background: rgba(253, 253, 255, 0.52);
@@ -618,6 +632,12 @@ header {
 	bottom: -105px;
 	right: 0;
 }
+.leav-small {
+	display: none;
+	position: absolute;
+	bottom: -89px;
+	right: 0;
+}
 .testimonials {
 	position: relative;
 }
@@ -783,4 +803,183 @@ footer {
 	font-weight: lighter;
 	color: #ffffff;
 	opacity: 0.5;
+}
+
+/* responsive web design */
+
+@media screen and (max-width: 1500px) {
+	.flower_foto1 {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 1350px) {
+	.animals__cards {
+		row-gap: 92px;
+	}
+	.animals__scroll {
+		position: relative;
+		justify-content: space-between;
+		width: 940px;
+	}
+	.animals__card {
+		height: auto;
+	}
+	.arrow__left,
+	.arrow__right {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.arrow__left-ellipse {
+		position: absolute;
+		left: 35%;
+	}
+	.arrow__right-ellipse {
+		position: absolute;
+		right: 35%;
+	}
+	.animals {
+		padding-bottom: 180px;
+	}
+	.user__box-4 {
+		display: none;
+	}
+	.testimonials__boxs {
+		justify-content: space-between;
+	}
+	.container {
+		max-width: 940px;
+	}
+	.backstage__photo img {
+		width: 455px;
+		height: 418px;
+		object-fit: cover;
+	}
+	.backstage {
+		gap: 31px;
+	}
+	.pick__paragraph {
+		padding: 0 67px;
+	}
+	/* .pick__text h3 {
+		padding: 32px 48px 41px 49px;
+	} */
+}
+
+@media screen and (max-width: 1200px) {
+	.ellipse {
+		left: calc(50% - 367px / 2 + 139.5px);
+		top: 69px;
+	}
+	.watch__title {
+		left: calc(50% - 400.25px / 2 + 221.12px);
+		top: 122.8px;
+	}
+	.watch__btn {
+		left: calc(50% - 298px / 2 + 214px);
+		top: 563px;
+	}
+	.section__1 {
+		background-position: center;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.header__navigation ul {
+		gap: 48px;
+	}
+	.section__1 {
+		padding-bottom: 503px;
+	}
+	.ellipse {
+		width: 367px;
+		height: 367px;
+		top: -12px;
+	}
+	.watch__title {
+		font-size: 85px;
+		top: 42.8px;
+	}
+	.watch__btn {
+		top: 402px;
+	}
+	.backstage {
+		margin-top: 100px;
+		margin-bottom: 144px;
+	}
+	.animals__scroll {
+		width: 980px;
+		margin-bottom: 88px;
+	}
+	.flower_foto2,
+	.flower_foto3 {
+		display: none;
+	}
+	.flower_foto4,
+	.flower_foto5 {
+		display: block;
+	}
+	.animals {
+		padding-bottom: 143px;
+	}
+	.feed {
+		padding: 30px 0 50px 0;
+	}
+	.pick {
+		padding-top: 28px;
+	}
+	.pick__text h3 {
+		padding: 21px 0 20px 49px;
+	}
+	.pick__text h4 {
+		padding-left: 49px;
+		padding-right: 80px;
+	}
+	.pick__text p {
+		padding: 10px 81px 41px 50px;
+	}
+	.pick__paragraph {
+		padding: 0 87px;
+	}
+	.pick__button button {
+		margin-top: 70px;
+		margin-bottom: 52px;
+	}
+	.testimonials__title h3 {
+		padding: 101px 0 28px 0;
+	}
+	.user__box {
+		width: 296px;
+		height: 391px;
+	}
+	.line__scroll {
+		width: 392px;
+		height: 8px;
+		background: #e7e9e8;
+		margin: 21px 0 52px 269px;
+	}
+	.line {
+		width: 75px;
+	}
+	.testimonials__button button {
+		margin-bottom: 141px;
+	}
+	.leav {
+		display: none;
+	}
+	.leav-small {
+		display: block;
+	}
+	.footer .footer__header {
+		gap: 460px;
+		justify-content: flex-start;
+	}
+	.header__navigation ul {
+		gap: 46px;
+	}
+	.header__container {
+		position: relative;
+		z-index: 2;
+	}
 }
