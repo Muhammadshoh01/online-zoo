@@ -89,6 +89,18 @@ header {
 .design a:hover {
 	color: #f9804b;
 }
+.burger__menu {
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+	display: none;
+}
+.burger__menu-line {
+	width: 18px;
+	height: 2px;
+	background: #ffffff;
+	border-radius: 2px;
+}
 /* end header section */
 
 /* start donate section */
@@ -572,4 +584,361 @@ footer {
 	font-weight: lighter;
 	color: #ffffff;
 	opacity: 0.5;
+}
+
+@media screen and (max-width: 1200px) {
+	.section__1 {
+		background-size: auto;
+		background-position-x: -174px;
+		background-position-y: -110px;
+	}
+	.donate__help {
+		width: 80%;
+	}
+	.container {
+		width: 940px;
+	}
+	.progress__labels {
+		gap: 30px;
+	}
+	.progress__btns {
+		gap: 85px;
+	}
+	.header__navigation ul {
+		display: flex;
+		gap: 48px;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.donate__data {
+		padding: 35px 0 47px 0;
+	}
+	.donate__information {
+		padding-bottom: 37px;
+	}
+	.pick {
+		padding: 12px 40px 44px 49px;
+	}
+	.pick h2 {
+		margin-right: 19px;
+	}
+	.diet__amount h2 {
+		margin-right: 78px;
+	}
+	.diet {
+		margin-top: 57px;
+		margin-left: -29px;
+	}
+	.amount {
+		padding-left: 15px;
+	}
+	.progress__btn:last-child {
+		display: none;
+	}
+	.progress__btns {
+		gap: 120px;
+	}
+	.progress__btns {
+		background: #404950;
+		border-radius: 2px;
+		padding: 7px 12px 5px 12px;
+		margin-right: 25px;
+	}
+	.progress__labels label:first-child {
+		display: none;
+	}
+	.progress__labels {
+		gap: 58px;
+		margin-top: 32px;
+		margin-right: -21px;
+	}
+	.another__amount input {
+		padding: 22px 17px 16px 9px;
+		margin-right: 9px;
+		font-size: 16px;
+	}
+	.dollar {
+		position: absolute;
+		left: 535px;
+		bottom: 10px;
+	}
+	.another__amount {
+		margin: 32px 0 28px 0;
+	}
+	.amount__type {
+		margin-right: 24px;
+	}
+	.amount__button button {
+		margin-right: 4px;
+	}
+	.donate {
+		padding-bottom: 30px;
+	}
+	.footer__header {
+		gap: 460px;
+		justify-content: flex-start;
+	}
+}
+
+@media screen and (max-width: 980px) {
+	.container {
+		width: 600px;
+	}
+	.header {
+		padding: 14px 20px;
+	}
+	.progress__btn:first-child {
+		display: none;
+	}
+	.progress__btn:nth-child(2) {
+		display: none;
+	}
+	.progress__labels label:nth-child(2) {
+		display: none;
+	}
+	.progress__labels label:nth-child(3) {
+		display: none;
+	}
+	.header__navigation,
+	.design {
+		display: none;
+	}
+	.burger__menu {
+		display: flex;
+	}
+	.pick {
+		padding: 12px 0px 44px 0px;
+	}
+	.pick h3 {
+		text-align: center;
+	}
+	.footer__icons {
+		gap: 18px;
+	}
+	.footer__navbar {
+		margin-top: 71px;
+	}
+	.header__navigation ul {
+		gap: 37px;
+	}
+	footer {
+		padding: 12px 20px;
+		position: relative;
+	}
+	.footer__news {
+		display: none;
+	}
+	.footer__nav {
+		display: block;
+	}
+	.footer__icons p {
+		display: none;
+	}
+	.footer__icons {
+		position: absolute;
+		right: 20px;
+		top: 16px;
+	}
+	.footer__nav {
+		margin-left: 0;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.header {
+		padding: 0px;
+	}
+	.header__logo h1 {
+		border: none;
+		padding: 0;
+		font-size: 13px;
+	}
+	.header__logo .bamboo {
+		position: absolute;
+		top: 17px;
+		left: 3px;
+	}
+	.section__1 {
+		padding-bottom: 338px;
+		background-position-x: -370px;
+		background-position-y: -173px;
+	}
+	.donate__help {
+		font-size: 24px;
+		width: 95%;
+		padding-top: 29px;
+	}
+	.donate__data {
+		padding: 15px 0 30px 0;
+	}
+	.donate__information {
+		padding-bottom: 29px;
+	}
+	.pick + h2 {
+		margin-right: 0px;
+		padding-top: 18px;
+	}
+	.pick h3 {
+		padding-top: 21px;
+	}
+	.diet__info p {
+		padding-left: 12px;
+		padding-top: 0;
+	}
+	.diet__amount h2 {
+		padding-bottom: 9px;
+	}
+	.x_icon {
+		position: absolute;
+		right: 68px;
+		top: 65px;
+	}
+	.amount {
+		padding-left: 0;
+	}
+	.amount p {
+		padding-left: 10px;
+		padding-top: 35px;
+	}
+	.progress__bar {
+		padding: 2px 0 25px 0;
+	}
+	.progress__btns {
+		margin-right: 0;
+		padding: 7px 12px 4px 35px;
+	}
+	.diet {
+		margin-top: 52px;
+		margin-left: -29px;
+	}
+	.progress__labels {
+		margin-left: 15px;
+		margin-top: 34px;
+	}
+	.donate {
+		padding-bottom: 46px;
+	}
+	.pick {
+		padding: 12px 0px 30px 0px;
+	}
+	.pick .pick_f {
+		margin-right: 0;
+		padding-top: 17px;
+	}
+	.another__amount {
+		margin: 38px 0 28px 0;
+	}
+	.another__amount input {
+		width: 181px;
+		height: 44px;
+		margin-right: 0;
+		padding: 18px 17px 16px 7px;
+	}
+	.dollar {
+		position: absolute;
+		left: 370px;
+		bottom: 8px;
+	}
+	.amount__button button {
+		margin-right: -2px;
+	}
+	.footer__btn {
+		margin-top: 35px;
+	}
+}
+
+@media screen and (max-width: 639px) {
+	.container {
+		width: 300px;
+	}
+	.donate__information {
+		font-size: 24px;
+	}
+	.pick .pick_f {
+		font-size: 24px;
+	}
+	.pick h3 {
+		font-size: 16px;
+	}
+	.diet__panda img {
+		width: 160.15px;
+		height: 138.72px;
+	}
+	.diet__info p {
+		font-size: 9.02255px;
+		padding-right: 20px;
+	}
+	.diet__amount h2 {
+		font-size: 40px;
+		margin-right: 20px;
+	}
+	.progress__btns {
+		gap: 50px;
+	}
+	.progress__labels label {
+		font-size: 17px;
+	}
+	.progress__labels {
+		gap: 10px;
+	}
+	.footer__logo h1 {
+		border: none;
+		display: block;
+		font-size: 19.0145px;
+	}
+	.footer__logo h1 span {
+		display: inline-block;
+	}
+	.footer__header {
+		justify-content: center;
+		align-items: center;
+	}
+	.footer__icons {
+		flex-direction: row;
+		top: 80px;
+		right: 50%;
+		transform: translateX(50%);
+	}
+	.footer__btn {
+		margin-top: 81px;
+	}
+	.footer__btn a {
+		margin: 0 auto;
+	}
+	.footer__navbar {
+		align-items: center;
+		flex-direction: column-reverse;
+		gap: 30px;
+		margin-top: 30px;
+	}
+	.dollar {
+		position: absolute;
+		left: 218px;
+		bottom: 8px;
+	}
+	.progress__labels {
+		margin-right: 0;
+	}
+}
+@media screen and (max-width: 320px) {
+	.section__1 {
+		padding-bottom: 190px;
+		background-size: 767px 375px, cover;
+		background-position: -149px -59px;
+	}
+	.donate__data {
+		padding: 15px 0 23px 0;
+	}
+	.pick .pick_f {
+		margin-right: 0;
+		padding-top: 8px;
+	}
+	.pick h3 {
+		padding-top: 12px;
+	}
+	.diet {
+		margin-top: 14px;
+		margin-left: 18px;
+	}
 }
