@@ -938,7 +938,94 @@ footer {
 		padding-top: 12px;
 	}
 	.diet {
-		margin-top: 14px;
-		margin-left: 18px;
+		margin-top: 13px;
+		margin-left: -16px;
+		gap: 30px;
+	}
+	.diet__info {
+		position: relative;
+		padding-top: 30px;
+	}
+	.diet__amount h2 {
+		font-size: 40px;
+		margin-right: 4px;
+	}
+	.diet__info p {
+		padding-left: 0;
+		font-size: 9.02255px;
+		padding-right: 6px;
+	}
+	.x_icon {
+		position: absolute;
+		right: -9px;
+		top: 38px;
+	}
+	.x_icon img {
+		width: 7.89px;
+		height: 7.89px;
+	}
+	.amount p {
+		padding-left: 0px;
+		padding-top: 2px;
+	}
+	.progress__btns {
+		margin-right: 0;
+		padding: 0px 15px 0px 15px;
+		gap: 61px;
+	}
+	.progress__btn input {
+		width: 5px;
+		height: 5px;
+	}
+	.progress__btn input::after {
+		top: -8px;
+		right: -17px;
+	}
+	.progress__bar {
+		padding: 5px 0 0px 0;
+	}
+	.progress__labels label {
+		font-size: 13px;
+	}
+	.progress__labels {
+		gap: 32px;
+	}
+	.another__amount {
+		margin: 28px 0 24px 0;
+	}
+	.pick {
+		padding: 12px 0px 17px 0px;
+	}
+	.donate {
+		padding-bottom: 20px;
+	}
+	.amount__share {
+		/* text-align: center; */
+		text-align: start;
+	}
+	.container {
+		width: 301px;
+	}
+	.footer__logo h2 {
+		border: none;
+		flex-direction: row;
+	}
+	footer {
+		padding: 21px 5px;
+		position: relative;
+	}
+	.footer__logo .bamboo {
+		position: absolute;
+		top: -5px;
+		left: 72px;
+	}
+	.footer__icons {
+		gap: 30px;
+	}
+	.header__navigation ul {
+		gap: 30px;
+	}
+	.footer__icons {
+		top: 74px;
 	}
 }
