@@ -846,6 +846,16 @@ footer {
 	.footer__btn {
 		margin-top: 35px;
 	}
+	.header__container {
+		position: fixed;
+		width: 100%;
+		z-index: 10;
+	}
+	.section__1 {
+		padding-bottom: 369px;
+		background-position-x: -370px;
+		background-position-y: -173px;
+	}
 }
 
 @media screen and (max-width: 639px) {
@@ -1027,5 +1037,14 @@ footer {
 	}
 	.footer__icons {
 		top: 74px;
+	}
+	.section__1 {
+		padding-bottom: 221px;
+		background-size: 767px 375px, cover;
+		background-position: -149px -59px;
+	}
+	.progress__labels {
+		margin-left: 15px;
+		margin-top: 11px;
 	}
 }
