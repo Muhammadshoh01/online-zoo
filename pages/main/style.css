@@ -1172,13 +1172,13 @@ footer {
 		left: 6px;
 	}
 	.ellipse {
-		top: 9.23px;
+		top: 44.23px;
 	}
 	.watch__title {
-		top: 46.04px;
+		top: 83.04px;
 	}
 	.watch__btn {
-		top: 244px;
+		top: 279px;
 	}
 	.section__1 {
 		padding-bottom: 337px;
@@ -1309,6 +1309,13 @@ footer {
 	.header__navigation ul {
 		gap: 37px;
 	}
+	.section__1 {
+		padding-bottom: 374px;
+	}
+	.header__container {
+		position: fixed;
+		width: 100%;
+	}
 }
 
 @media screen and (max-width: 610px) {
@@ -1334,7 +1341,7 @@ footer {
 		right: 11px;
 	}
 	.backstage {
-		margin-top: 91px;
+		margin-top: 137px;
 	}
 	.backstage__text h2 {
 		font-size: 24px;
@@ -1448,7 +1455,7 @@ footer {
 		top: 187px;
 	}
 	.section__1 {
-		padding-bottom: 187px;
+		padding-bottom: 221px;
 	}
 	.backstage__text {
 		width: 495px;
@@ -1550,5 +1557,14 @@ footer {
 	.leav_mobile {
 		display: block;
 		bottom: -25px;
+	}
+	.ellipse {
+		top: 56.17px;
+	}
+	.watch__title {
+		top: 75.12px;
+	}
+	.watch__btn {
+		top: 221px;
 	}
 }
